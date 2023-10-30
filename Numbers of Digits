@@ -1,0 +1,11 @@
+public class Solution {
+    public static int countDigits(int n){
+         if(n==0) {
+			return 0;
+		}
+		int small=countDigits(n/10);
+		
+		return small+1;
+        // Write your code here.
+    }
+}
