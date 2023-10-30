@@ -1,0 +1,18 @@
+public class Solution {
+
+	public static int power(int x, int n) {
+		 if(n==0) {
+			return 1;
+		}
+		int small=power(x,n-1);
+		int output=x*small;
+		return output;
+		/* Your class should be named Solution
+		 * Don't write main().
+		 * Don't read input, it is passed as function argument.
+		 * Return output and don't print it.
+		 * Taking input and printing output is handled automatically.
+		 */
+		
+	}
+}
